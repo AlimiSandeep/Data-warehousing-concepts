@@ -1,0 +1,123 @@
+ENTITY RELATIONAL (ER) MODEL is a high-level conceptual data model.
+ER modeling helps you to analyze data requirements systematically to produce a well-designed database.
+The Entity-Relation model represents real-world entities and the relationship between them. 
+It is a GUI representation of the logical structure of a Database
+
+###	Why use ER Diagrams?
+	-Provide a preview of how all your tables should connect, what fields are going to be on each table
+	-Helps to describe entities, attributes, relationships
+	-ER diagrams are translatable into relational tables which allows you to build databases quickly
+	-ER diagrams can be used by database designers as a blueprint for implementing data in specific software applications
+	-The database designer gains a better understanding of the information to be contained in the database with the help of ER diagram
+
+###	Components of the ER Diagram
+
+	*Entities
+	*Attributes
+	*Relationships
+	
+*Entity
+
+	An Entity may be an object with a physical existence
+	An entity can be place, person, object, event or a concept, which stores data in the database
+	
+	In the ER model, an entity can be represented as rectangles.
+	
+	Entity Types:
+	
+	   Weak Entity
+		An entity that depends on another entity called a weak entity.
+		The weak entity doesn't contain any key attribute that uniquely identifies it. 
+		The weak entity is represented by a double rectangle.
+
+	   Strong Entity
+		An entity which doesnot depend on any other entity.
+		It has a key attribute that uniquely identifies it.
+		Strong entity is represented by single rectangle
+		
+*Attributes
+
+	The attribute is used to describe the property of an entity. 
+	Attributes of a student can be id, age, contact number, name, etc.
+	
+	Eclipse is used to represent an attribute.
+	
+	Attribute Types:
+	
+		Key Attribute
+		
+		   The attribute which uniquely identifies each entity in the entity set is called key attribute.
+		   For example, Roll_No will be unique for each student. 
+		   In ER model, key attribute is represented by an oval with underlying lines.
+		   
+	   Composite Attribute
+	   
+		   An attribute composed of many other attribute is called as composite attribute.
+		   For example, Address attribute of student Entity type consists of Street, City, State, and Country. 
+		   In ER model, composite attribute is represented by an oval comprising of ovals.
+		   
+	   Multivalued Attribute
+	   
+		   An attribute consisting more than one value for a given entity.
+		   For example, Phone_No (can be more than one for a given student).
+		   In ER model, multivalued attribute is represented by double oval.
+		   
+	   Derived Attribute
+	   
+		   An attribute which can be derived from other attributes of the entity type is known as derived attribute.
+		   For example,  Age (can be derived from DOB).
+		   In ER diagram, derived attribute is represented by dashed oval.
+
+*Relationships
+
+	A relationship is used to describe the relation between entities.
+	
+	Diamond or rhombus is used to represent the relationship.
+	
+	A relationship type represents the association between entity types.
+	For example,‘Enrolled in’ is a relationship type that exists between entity type Student and Course.
+	In ER diagram, relationship type is represented by a diamond and connecting the entities with lines.
+	
+	Degree of a relationship set:
+		The number of different entity sets participating in a relationship set is called as degree of a relationship set.
+
+		Unary Relationship –only ONE entity set participating in a relation
+			 For example, one person is married to only one person.
+
+		Binary Relationship –TWO entities set participating in a relation
+			For example, Student is enrolled in Course.
+			
+		n-ary Relationship –n entities set participating in a relation
+		
+	Cardinality:
+		The number of times an entity of an entity set participates in a relationship
+		
+		One-to-one:
+			One entity from entity set X can be associated with at most one entity of entity set Y and vice versa.
+			For example: A male can marry to one female and a female can marry to one male
+			
+		One-To-Many:
+			One entity from entity set X, and more than one entity from entity set Y associates with the relationship 
+			For example, one class is consisting of multiple students.
+			
+		Many-To-One
+			 More than one entity from entity set X, and only One entity from entity set Y associates with the relationship
+			 For example, many students belong to the same class.
+		
+		Many-To-Many
+			One entity from X can be associated with more than one entity from Y and vice versa.
+			For example, a student can take more than one course and one course can be taken by many students. 
+		
+###	ER model disadvantages:
+
+No graphical user interface (GUI) that takes an general ER model and makes it usable by end users
+
+Reference:
+https://www.geeksforgeeks.org/introduction-of-er-model/
+https://www.javatpoint.com/dbms-er-model-concept
+https://www.guru99.com/er-diagram-tutorial-dbms.html
+
+	   
+	   
+
+
