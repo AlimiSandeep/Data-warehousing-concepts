@@ -1,0 +1,84 @@
+##	What is Data Warehousing?
+A Data Warehousing (DW) is process for collecting and managing data from varied sources to provide meaningful business insights.
+It is a process of transforming data into information
+
+A Data warehouse is typically used to connect and analyze business data from heterogeneous sources.
+The data warehouse is the core of the BI system which is built for data analysis and reporting.
+ 
+##What is Data Mining?
+ Data mining is looking for patterns in the data that may lead to higher sales and profits.
+
+##	Why We Need Data Warehouse?
+
+-Data warehouse allows users to access critical data from the number of sources in a single place.
+ Therefore, it saves user's time of retrieving data from multiple sources.
+ 
+-Data warehouse stores a large amount of historical data. 
+ This helps users to analyze different time periods and trends to make future predictions.
+ 
+##	Characteristics of Data warehouse:
+
+Subject-Oriented
+A data warehouse is subject oriented as it offers information regarding a theme instead of companies' ongoing operations. 
+These subjects can be sales, marketing, distributions, etc.
+
+Integrated
+Data is collected from multiple sources and integrated in one place with proper formats,naming conventions etc
+
+Time-variant
+Information stored in DW should be available within the  prescribed stipulated timeline
+
+Non-volatile
+Means the previous data is not erased when new data is entered in it.
+
+##	What is Business Intelligence?
+--BI(Business Intelligence) is a set of processes, architectures, and technologies that convert raw data into meaningful information 
+  that drives profitable business actions.
+--It is a suite of software and services to transform data into actionable intelligence and knowledge.
+
+--BI has a direct impact on organization's strategic, tactical and operational business decisions.
+--BI supports fact-based decision making using historical data rather than assumptions and gut feeling.
+
+BI tools perform data analysis and create reports, summaries, dashboards, maps, graphs, and
+charts to provide users with detailed intelligence about the nature of the business.
+
+##	Some of the tools used for BI:
+
+*Excel
+
+*Reporting tool
+ -Tableau
+ -Qlik view
+ -SAP Business Objects
+ -IBM Cognos
+ 
+*OLAP Tool
+ -Hyperion Cubes
+ -SQL server reporting services
+ 
+*Data Mining tools 
+ 
+ 
+##	Data warehouse architecture:
+
+Three-Tier Data Warehouse Architecture
+Generally a data warehouses adopts a three-tier architecture.
+
+Bottom Tier − The bottom tier of the architecture is the data warehouse database server. 
+			  It is the relational database system. We use the back end tools and utilities to feed data into the bottom tier.
+			  These back end tools and utilities perform the Extract, Clean, Load, and refresh functions.
+
+Middle Tier − In the middle tier, we have the OLAP Server that can be implemented in either of the following ways.
+
+				By Relational OLAP (ROLAP), which is an extended relational database management system. 
+				The ROLAP maps the operations on multidimensional data to standard relational operations.
+
+			    By Multidimensional OLAP (MOLAP) model, which directly implements the multidimensional data and operations.
+
+Top-Tier − 	This tier is the front-end client layer. This layer holds the query tools and reporting tools, analysis tools and data mining tools.
+
+
+##	Purpose of Staging area:
+
+A data staging area (DSA) is a temporary storage area between the data sources and a data warehouse.
+The staging area is used to combine data from multiple data sources and apply transformations, validations, data cleansing.

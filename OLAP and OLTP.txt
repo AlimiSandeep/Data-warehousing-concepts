@@ -1,0 +1,59 @@
+## OLAP (Online Analytical Processing)
+It is a technology that enables analysts to extract and view business data from different points of view. 
+
+At the core of the OLAP, concept is an OLAP Cube. The OLAP cube is a data structure optimized for very quick data analysis.
+
+Some of the analytical operations of OLAP:
+
+Roll-up			-known as 'aggregation'
+Drill-down		-data is fragmented into smaller parts
+Slice 			-one dimension is selected, and a new sub-cube is created.
+Dice			-you can select 2 or more dimensions that result in the creation of a sub-cube.
+Pivot (rotate)	-you rotate the data axes to provide a substitute presentation of data.
+
+(Reference :https://www.guru99.com/online-analytical-processing.html)
+
+##	Types of OLAP
+
+**ROLAP:
+Relational OLAP (ROLAP), which is an extended relational database management system. 
+The ROLAP maps the operations on multidimensional data to standard relational operations.
+
+**MOLAP:
+Multidimensional OLAP (MOLAP) model, which directly implements the multidimensional data and operations.
+
+**HOLAP:
+In HOLAP approach the aggregated totals are stored in a multidimensional database while the detailed data is stored in the relational database
+
+**DOLAP:
+In Desktop OLAP, a user downloads a part of the data from the database locally, or on their desktop and analyze it.
+
+
+##	OLTP vs OLAP
+
+**OLTP (Online Transactional Processing):
+OLTP is a type of data processing that executes transaction-focused tasks. 
+It involves inserting, deleting, or updating small quantities of database data.
+It is often used for financial transactions, order entry, retail sales and CRM.
+
+OLTP uses traditional DBMS.
+Tables in OLTP database are normalized.
+Allow read/write operations.
+Queries in this process are standardized and simple.
+Complete backup of the data combined with incremental backups
+Designed for real time business operations.
+DB design is application oriented. Example: Database design changes with industry like Retail, Airline, Banking, etc.
+
+
+**OLAP (Online Analytical Processing):
+A category of software tools which provide analysis of data for business decisions.
+The primary objective here is data analysis and not data processing.
+OLAP creates a single platform for all type of business analytical needs which includes planning, budgeting, forecasting, and analysis.
+
+OLAP uses the data warehouse.
+Tables in OLAP database are not normalized.
+Mostly select operations
+Complex queries involving aggregations.
+OLAP only need a backup from time to time. Backup is not important compared to OLTP
+DB design is subject oriented. Example: Database design changes with subjects like sales, marketing, purchasing, etc.
+
