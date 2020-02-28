@@ -1,0 +1,67 @@
+###	What is Data Mart?
+
+	A data mart is focused on a single functional area of an organization and contains a subset of data stored in a Data Warehouse.
+
+	-A data mart is a condensed version of Data Warehouse and is designed for 
+		use by a specific department, unit or set of users in an organization. 
+	  E.g., Marketing, Sales, HR or finance. It is often controlled by a single department in an organization.
+	-Data Mart usually draws data from only a few sources compared to a Data warehouse.
+	-Data marts are small in size and are more flexible compared to a Datawarehouse.
+
+###	Why do we need Data Mart?
+
+	-Data Mart helps to enhance user's response time due to reduction in volume of data
+	-It provides easy access to frequently requested data.
+	-Data mart are simpler to implement when compared to corporate Datawarehouse. 
+	-Data is partitioned and allows very granular access control privileges.
+
+
+###	Difference between Data Warehouse and Data mart
+
+	Data Warehouse:
+		-A Data Warehouse is a large repository of data collected from different organizations or departments within a corporation.
+		-The designing process of Data Warehouse is quite difficult.
+		-Data warehousing is broadly focused in all the departments. It is possible that it can even represent the entire company.
+		-The size of the Data Warehouse may range from 100 GB to 1 TB+.
+		-The implementation process of Data Warehouse can be extended from months to years.
+
+
+	Data Mart:
+		-A data mart is an only subtype of a Data Warehouse. It is designed to meet the need of a certain user group.
+		-The designing process of Data Mart is easy.
+		-Data Mart is subject-oriented, and it is used at a department level.
+		-The Size of Data Mart is less than 100 GB.
+		-The implementation process of Data Mart is restricted to few months.
+
+*************************************************	Metadata	********************************************
+Metadata is simply defined as data about data. 
+
+-The data that is used to represent other data is known as metadata. For example, the index of a book serves as a metadata for the contents in the book. 
+-In other words, we can say that metadata is the summarized data that leads us to detailed data.
+-In terms of data warehouse, we can define metadata as follows.
+	Metadata is the road-map to a data warehouse.
+	Metadata in a data warehouse defines the warehouse objects.
+	Metadata acts as a directory. This directory helps the decision support system to locate the contents of a data warehouse.
+	
+###	Categories of Metadata
+
+	*Technical Metadata:
+		This will store technical data such as tables attributes, their data types, size, primary key attributes, foreign key attributes, and any indexes.
+		Intended for developers/testers/analysts/DBAs to build (or) maintain the system.
+
+	*Business Metadata: 
+		Data will be stored in business terms for the benefit of end-users/analysts/managers/ any users.
+		It can be derived from any business documents and business rules.
+
+	*Operational Metadata: 
+		As we know the data into the DW system is sourced from many operational systems with diverse data types and fields. 
+		DW extracts transform such data into the unique type and load all this data into the system.
+
+		At the same time, it must be able to link back the data to its source system data. 
+		The metadata that stores all these operational data sources information is known as Operational metadata.
+
+
+
+
+
+
