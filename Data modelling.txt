@@ -1,0 +1,70 @@
+###	What is Data Modelling?
+	Data modeling (data modelling) is the process of creating a data model for the data to be stored in a Database. 
+	
+	-This data model is a conceptual representation of Data objects, the associations between different data objects and the rules.
+	-Data modeling helps in the visual representation of data and enforces business rules, regulatory compliances, and government policies on the data.
+	-Data Models ensure consistency in naming conventions, default values, semantics, security while ensuring quality of the data.
+
+	-Data model emphasizes on what data is needed and how it should be organized instead of what operations need to be performed on the data.
+	
+###	The two types of Data Models techniques are:
+
+	1.Entity Relationship (E-R) Model
+	2.Multidimensional modeling
+
+###	Why use Data Model?
+
+	A data model helps design the database at the conceptual, physical and logical levels.
+	Data Model structure helps to define the relational tables, primary and foreign keys and stored procedures.
+	It provides a clear picture of the base data and can be used by database developers to create a physical database.
+	
+###	Types of Data Models
+
+*Conceptual: This Data Model defines WHAT the system contains.
+	A conceptual data model identifies the highest-level relationships between the different entities. 
+
+	Features of conceptual data model include:
+		Includes the important entities and the relationships among them.
+		No attribute is specified.
+		No primary key is specified.
+		
+*Logical: Defines HOW the system should be implemented regardless of the DBMS.
+	A logical data model describes the data in as much detail as possible, without regard to how they will be physical implemented in the database.
+	
+	Features of a logical data model include:
+		Includes all entities and relationships among them.
+		All attributes for each entity are specified.
+		The primary key for each entity is specified.
+		Foreign keys (keys identifying the relationship between different entities) are specified.
+		Normalization occurs at this level.
+		
+------Conceptual vs Logical data model-----
+
+-In a logical data model, primary keys are present, whereas in a conceptual data model, no primary key is present.
+-In a logical data model, all attributes are specified within an entity. No attributes are specified in a conceptual data model.
+-Relationships between entities are specified using primary keys and foreign keys in a logical data model. 
+	In a conceptual data model, the relationships are simply stated, not specified, so we simply know that two entities are related, 
+	but we do not specify what attributes are used for this relationship.
+	
+*Physical: This Data Model describes HOW the system will be implemented using a specific DBMS system.
+	Physical data model represents how the model will be built in the database. 
+	A physical database model shows all table structures, including column name, column data type, column constraints, 
+	primary key, foreign key, and relationships between tables.
+	
+	Features of a physical data model include:
+
+		Specification all tables and columns.
+		Foreign keys are used to identify relationships between tables.
+		Denormalization may occur based on user requirements.
+		Physical data model will be different for different RDBMS. For example, data type for a column may be different between MySQL and SQL Server.
+		
+-----Logical vs Physical Data model-----
+
+-Entity names are now table names.
+-Attributes are now column names.
+-Data type for each column is specified. Data types can be different depending on the actual database being used.
+		
+
+Reference:
+https://www.1keydata.com/datawarehousing/conceptual-data-model.html
+https://www.guru99.com/data-modelling-conceptual-logical.html
