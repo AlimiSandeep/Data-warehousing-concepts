@@ -1,0 +1,65 @@
+###	What is Dimensional Model?
+
+	A dimensional model is a data structure technique optimized for Data warehousing tools. 
+
+		-A Dimensional model is designed to read, summarize, analyze numeric information like values, balances, counts, weights, etc. in a data warehouse. 
+			In contrast, relation models are optimized for addition, updating and deletion of data in a real-time Online Transaction System.
+
+		-These dimensional and relational models have their unique way of data storage that has specific advantages.
+
+		-For instance, in the relational mode, normalization and ER models reduce redundancy in data.
+			On the contrary, dimensional model arranges data in such a way that it is easier to retrieve information and generate reports.
+
+	Hence, Dimensional models are used in data warehouse systems and not a good fit for relational systems.
+
+Elements of Dimensional Data model:
+
+Fact :
+Facts are the measurements/metrics or facts from your business process. For a Sales business process, a measurement would be quarterly sales number
+
+### Types of Facts:
+Additive: 
+	Measures that can be added across all dimensions
+	A sales fact is a good example for additive fact.
+
+Semi Additive: 
+	Measures that can be added across few dimensions and not with others
+	Daily balances fact can be summed up through the customers dimension but not through the time dimension.
+	
+Non Additive: 
+	Measures that cannot be added across all dimensions
+	Facts which have percentages, ratios calculated.
+	
+Factless facts:
+	Fact table that contains no measures or facts.
+	Fact table which has only product key and date key is a factless fact.
+
+
+
+Dimension :
+Dimension provides the context surrounding a business process event (facts). In simple terms, they give who, what, where of a fact. 
+In the Sales business process, for the fact quarterly sales number, dimensions would be
+
+Customer, Products, Location
+
+A dimension table consists of the attributes about the facts. 
+
+Types of schema:
+
+Star schema: 
+	A star schema is the one in which a central fact table (which is in 3NF) is sourrounded by denormalized dimensional tables.
+	It has simple structure and most widely used schema in datawarehouse
+	Greater query efficiency
+	
+	Characteristics:
+	The dimension table is joined to the fact table using a foreign key
+	The dimension table are not joined to each other
+	
+
+Snowflake schema:
+A Snowflake Schema is an extension of a Star Schema, and it adds additional dimensions. 
+Snowflake schemas normalize dimensions to eliminate redundancy. ie the dimension data has been grouped into multiple tables instead of one large table. 
+
+
+
+
