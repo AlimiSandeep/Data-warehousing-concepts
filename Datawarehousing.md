@@ -1,8 +1,8 @@
-**1. [ Introduction to Datawarehousing ](#introduction-to-datawarehousing)   
+**1. [ Introduction to Data warehousing ](#introduction-to-datawarehousing)   
 2. [OLTP ( Online Transactional Processing ) and OLAP ( Online Analytical Processing )](#oltp-and-olap)  
 3. [Datamart and Metadata](#data-mart-and-metadata)  
 4. [Data modelling](#data-modelling)    
-5. [ER model](#er-model)    
+5. [Entity Relational ( ER ) model](#er-model)    
 6. [Dimensioanl model](#dimensional-model)  
 7. [ Schemas ](#schemas)    
 8. [Indexes](#indexes)  
@@ -10,7 +10,7 @@
 10. [Data warehouse Implementation Approach](#dwbietl-implementation-approach)**
 
 
-## Introduction to Datawarehousing
+## Introduction to Data warehousing
 ***
 
 ##  What is Data Warehousing?
@@ -127,14 +127,14 @@ Known as 'aggregation'
 * In this example, cities New jersey and Lost Angles and rolled up into country USA
 * The sales figure of New Jersey and Los Angeles are 440 and 1560 respectively. They become 2000 after roll-up
 * In this aggregation process, data is location hierarchy moves up from the city to the country.
-* In the roll-up process at least one or more dimensions need to be removed. In this example, the Quater dimension is removed.
+* In the roll-up process at least one or more dimensions need to be removed. In this example, the Quarter dimension is removed.
 
 **DRILL DOWN**  
 In drill-down data is fragmented into smaller parts. It is the opposite of the rollup process.
 
 ![Drill-Down example](https://www.guru99.com/images/1/022218_1238_WhatisOLAPO3.png)
 
-* Quater Q1 is drilled down to months January, February, and March. Corresponding sales are also registers.
+* Quarter Q1 is drilled down to months January, February, and March. Corresponding sales are also registers.
 * In this example, dimension months are added.  
 
 **SLICE**   
